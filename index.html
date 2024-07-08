@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío APIs</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- inicio de "container-principal" -->
+    <div class="container-principal">
+        <hr>
+        <h1>Conversor de Monedas Nacional</h1>
+        <hr>
+        <!-- inicio "container-conversor" -->
+        <div class="container-conversor">
+            <div class="caja-conversor">
+                <div>
+                    <h2>Pesos Chilenos</h2>
+                    <input id="montoCLP" type="text" placeholder="Ingrese el monto en CLP">
+                </div>
+                <div>
+                    <div>
+                        <label for="valoresMoneda">Moneda a convertir:</label>
+                    </div>
+                    <div>
+                        <select id="valoresMoneda" name="valoresMoneda"></select>
+                    </div>
+                    <input class="boton-buscar" type="button" id="boton-buscar" value="Buscar">
+                </div>
+            </div>
+            <div class="resultado">...</div>
+        </div>
+        <!-- fin de "container-conversor" -->
+    </div>
+    <div class="grafico">
+        <canvas id="myChart"></canvas>
+    </div>
+    <!-- fin de container -->
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
